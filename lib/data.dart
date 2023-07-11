@@ -11,18 +11,18 @@ final List<Map<String, dynamic>> questionListJson = [
       "correct_answer": "library",
       "options": ["library", "framework", "widget", "utility"]
     },
-    // {
-    //   "id": 3,
-    //   "question": "What is Getx 3?",
-    //   "correct_answer": "library",
-    //   "options": ["library", "framework", "widget", "utility"]
-    // },
-    // {
-    //   "id": 4,
-    //   "question": "What is Getx 4?",
-    //   "correct_answer": "library",
-    //   "options": ["library", "framework", "widget", "utility"]
-    // },
+    {
+      "id": 3,
+      "question": "What is Getx 3?",
+      "correct_answer": "library",
+      "options": ["library", "framework", "widget", "utility"]
+    },
+    {
+      "id": 4,
+      "question": "What is Getx 4?",
+      "correct_answer": "library",
+      "options": ["library", "framework", "widget", "utility"]
+    },
     // {
     //   "id": 5,
     //   "question": "What is Getx?",

@@ -36,16 +36,19 @@ class HomePageController extends GetxController {
   }
 
   nextQuestion() {
-    if (currentQuestionNumber.value < questionList.length) {
-      if(currentQuestionNumber.value < questionList.length - 1) {
-        currentQuestionNumber.value++;
-      }
+    print(currentQuestionNumber.value);
+    print(questionList.length);
+    if (currentQuestionNumber.value < questionList.length- 1) {
+      // if(currentQuestionNumber.value < questionList.length ) {
+      //
+      // }
+      currentQuestionNumber.value++;
       groupValue.value = "";
       whetherAnswerCorrect.value = "";
     } else {
       Get.dialog(
         customDialog(
-          contentPadding: EdgeInsets.zero,
+          contentPadding: EdgeInsets.all(10),
           content: Column(
             mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.start,
@@ -53,17 +56,20 @@ class HomePageController extends GetxController {
               const Text(
                 "Your Score is",
                 style: TextStyle(
-                  color: Colors.white,
-                  fontSize: FontSizes.size_16,
+                  color: Colors.black,
+                  fontSize: FontSizes.size_20,
                 ),
               ),
+              const SizedBox(height: FontSizes.spacer * 2,),
               Text(
                 "${score.value}",
                 style: const TextStyle(
-                  color: Colors.white,
-                  fontSize: FontSizes.size_16,
+                  color: Colors.black,
+                  fontSize: FontSizes.size_20,
                 ),
-              )
+              ),
+              const SizedBox(height: FontSizes.spacer * 2,),
+
             ],
           ),
         ),
